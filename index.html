@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <title>查令街84号 - 三翼工作室</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="description" content="这是你和ta的第一次“见面”。">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">报名信息</div>
+        <div class="mainbody">
+            <form>
+                <div class="name">
+                    <div class="message">姓名</div>
+                    <input type="text" name="name" class="text" />
+                </div>
+                <div class="sex">
+                    <div class="message">性别</div>
+                    <div class="radio"></div><span>男</span>
+                    <div class="radio"></div><span>女</span>
+                </div>
+                <div class="telephone">
+                    <div class="message">电话</div>
+                    <input type="number" name="telephone" class="text" />
+                </div>
+                <div class="picture">
+                    <div class="message">照片</div>
+                    <div class="upload">
+                        <span>上传照片</span>
+                        <input type="file" accept="image/png,image/gif,image/jpeg,image/jpg" />
+                    </div>
+                </div>
+                <div class="birthday">
+                    <div class="message">生日</div>
+                    <input type="date" name="birthday" class="text">
+                </div>
+                <div class="isactivity">
+                    <div class="messages">是否能坚持活动</div>
+                    <div class="radio"></div><span>是</span>
+                    <div class="radio"></div><span>否</span>
+                </div>
+                <div class="whyactivity">
+                    <div class="messages">为什么想参加活动</div>
+                    <div class="done"></div>
+                </div>
+                <div class="introduction">
+                    <div class="messages">简短的自我介绍</div>
+                    <div class="done"></div>
+                </div>
+                <textarea class="whyac" placeholder="为什么想参加活动"></textarea>
+                <textarea class="intro" placeholder="简短的自我介绍"></textarea>
+
+            </form>
+        </div>
+        <div class="submit">提交<img src="./images/send.png" alt=""> </div>
+        <div class="success">
+            <img src="./images/success.png" alt="success">
+            <div class="span">提交成功!</div>
+        </div>
+    </div>
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

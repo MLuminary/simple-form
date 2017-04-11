@@ -1,0 +1,233 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    
+}
+@font-face {
+    font-family: "word";
+    src: url(../font/word.TTF);
+}
+
+
+.container{
+    position: absolute;
+    left: 0;
+    right: 0;
+    font-family: "微软雅黑";
+    width: 100%;
+    height: 100%;
+    background: url(../images/container_bg.png) no-repeat center center;
+    background-size: 100% auto;
+    min-width: 317px;
+    min-height: 564px;
+    max-width: 391px;
+    max-height: 650px;
+}
+
+.container .title{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-family: "word";
+    font-size: 27px;
+    top: 15%;
+}
+.container .mainbody{
+    position: relative;
+    width: 70%;
+    left: 0;
+    right: 0;
+    height:48%;
+    top: 24%;
+}
+.container .mainbody form>div{
+    margin:10px 0;
+    font-size: 0;
+}
+.container .mainbody form>div:nth-child(n+6){
+    margin-bottom: 20px;
+    font-size: 0;
+}
+
+.container .mainbody .message{
+    display: inline-block;
+    font-size: 11px;
+    width: 13%;
+    margin-left: 10%;
+    padding:1% 3%;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #ffe196;
+    margin-right: 10%;
+}
+.container .mainbody .messages{
+    display: inline-block;
+    font-size: 11px;
+    width: 40%;
+    margin-left: 10%;
+    padding:1% 3%;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #ffe196;
+    margin-right: 2%;
+}
+.telephone input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    background: rgba(0,0,0,0);
+}
+
+input[class="text"]{
+    width: 58%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    border:none;
+    border-bottom: 2px solid #a20000;
+    font-size: 11px;
+    text-align: center;
+    font-family: "微软雅黑";
+}
+.container .mainbody .radio{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #a91313;
+    border-radius: 50%;
+    margin-right: 5%;
+   -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.container .mainbody .radio.active{
+    background-color: #a91313;
+}
+.container .mainbody .sex .radio:nth-child(4){
+    margin-left: 10%;
+}
+.container .mainbody span{
+    font-size: 12px;
+}
+.container .mainbody .isactivity .radio:nth-child(4){
+    margin-left: 2%;
+}
+.container .mainbody .picture .upload{
+    display: inline-block;
+    font-size: 9px;
+    width: 25%;
+    text-align: center;
+    border: 2px solid #a20000;
+    border-radius: 5px;
+    padding: 1px 10px;
+    margin-left:12%;
+    position: relative;
+}
+.container .mainbody .picture .upload input{
+    font-size: 9px;
+    width: 100%;
+    opacity:0 ;
+}
+.container .mainbody .picture .upload span{
+    position: absolute;
+    font-size: 11px;
+    left: 0;
+    right: 0;
+    top: 2px;
+}
+.container .mainbody .done{
+     width:39%;
+     height: 12px;
+     display: inline-block;
+    border-bottom: 2px solid #a20000;
+    font-size:11px;
+    text-align: center;
+    font-family: "微软雅黑";
+    line-height: 10px;
+}
+
+.submit{
+    position: absolute;
+    width: 60px;
+    height: 25px;
+    left: 0;
+    right: 0;
+    background-color: #fd6464;
+    font-size: 11px;
+    top: 80%;
+    text-indent: 10px;
+    border-radius: 5px;
+    color: #fff;
+    line-height: 25px;
+}
+.submit img{
+    position: absolute;
+    top: 6px;
+    left: 38px;
+    width: 15px;
+    height: 12px;
+}
+textarea{
+    position: absolute;
+    margin-left: 10%;
+    width: 90%;
+    height: 35%;
+    z-index: 9999;
+    bottom: 0;
+    border: 2px solid #a20000;
+    background-color: #f4ece6;
+    border-radius: 10px;
+    display: none;
+    padding: 10px;
+    font-size: 11px;
+    font-family: "微软雅黑";
+    -webkit-appearance: none;
+    box-sizing: border-box;   
+}
+textarea:focus{
+    outline: none;
+}
+input {
+    display: inline-block;
+}
+.reset{
+    position: absolute;
+    font-size: 9px;
+    color: #999999;
+    width: 60px;
+    height: 25px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 85%;
+}
+
+.success{
+    position:absolute;
+    width: 70%;
+    height:50%;
+    left: 0;
+    right: 0;
+    top: 24%;
+    background-color: #fff;
+    border: 3px solid #f2e4da;
+    border-radius: 10px;
+    z-index: 99998;
+    display: none;
+}
+.success img{
+    position: absolute;
+    width: 100%;
+    border-radius: 10px;
+    }
+.success .span{
+    font-family: "word";
+    font-size: 23px;
+    position: absolute;
+    top: 70%;
+    text-align: center;
+    left: 0;
+    right: 0;
+}
